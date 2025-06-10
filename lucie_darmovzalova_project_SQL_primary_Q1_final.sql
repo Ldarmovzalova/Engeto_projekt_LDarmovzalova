@@ -63,7 +63,7 @@ select
 from v_t_lucie_darmovzalova_project_sql_primary_q1_final 
 where kod_odvetvi ='S' and mezirocni_zmeny = 'Pokles'; -- postupně si budu přehazovat písmena, kódu odvětví, abych mohla udělat zhodnocení jednotlivých sektorů.
 
--- Pro všechny výše uvedené jsou data mezi lety 2000 a 2021, rok 2000 u všech bylo možné srovnat, jelikož je to počáteční rok sledování mprůměrných mezd.
+-- Pro všechny výše uvedené jsou data mezi lety 2000 a 2021, rok 2000 u všech bylo možné srovnat, jelikož je to počáteční rok sledování průměrných mezd.
 
 -- A (Zemědělství, lesnictví vybářství) pokles v letech 2009 a 2021.
 -- B (Těžba a dobývání) pokles v letech 2009, 2013, 2014 a 2016.
