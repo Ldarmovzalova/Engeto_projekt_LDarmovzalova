@@ -18,4 +18,4 @@ Sledovaným obdobím ve všech otázkách jsou roky 2006 až 2018.
 Každý z uložených SQL skripů obsahuje zadání/ otázku, postup, popis mezivýsledků a na konci odpověď. 
 
 Poznámky na konec:
-Zpracování projektu pro mě byla opravdu výzva, čím více jsem uvažovala nad zpracováním, tím složitější se mi zadání zdálo. Rozložení na menší části a postupné zpracování mi pomohlo. Překvapivá pro mě byla třetí otázka, kde jsem si v průběhu zpracování uvědomila, že se dá odpovědět dvěma způsoby, podle toho jaká data chci vidět.
+Zpracování projektu pro mě byla opravdu výzva, čím více jsem uvažovala nad zpracováním, tím složitější se mi zadání zdálo. Rozložení na menší části a postupné zpracování mi pomohlo. Překvapivá pro mě byla třetí otázka, kde jsem si v průběhu zpracování uvědomila, že se dá odpovědět dvěma způsoby, podle toho jaká data chci vidět. Kromě dvou tabulky s daty, jsem si vytvořila během zpracování projektu ještě jednu navíc. 
