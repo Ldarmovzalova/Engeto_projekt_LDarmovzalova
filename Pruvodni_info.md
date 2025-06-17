@@ -8,7 +8,7 @@ Zdrojové tabulky, které byli využity pro zpracování projektu jsou:
 - czechia_payroll -> přehled mezd dle kategorií a let
 - czechia_payroll_industry_branch -> názvy kategorii odvětví dle kódů
 - economies -> data o HDP, GINI a populaci evropských států
-- countries -> základní infrormace o státech (poloha, kontinent, náboženství, měna, apod.)
+- countries -> základní informace o státech (poloha, kontinent, náboženství, měna, apod.)
 
 Projekt se skládá z 5ti stěžejních otázek, na které odpovídáme s využitím výše uvedených zdrojových tabulek. Výsledkem je 5 SQL souborů, kdy každý odpovídá na jednu z otázek. 
 Byly vytvořeny také 2 stěžejní tabulky s daty - t_lucie_darmovzalova_project_SQL_primary_final (obsahuje srovnání průměrných mezd a průměrných cen potravin během let a kategoríí potravin) a t_lucie_darmovzalova_project_SQL_secondary_final (obsahuje údaje o hdp, gini a populaci evropských států). Tyto tabulky jsou dále využity pro zpracování odpovědí na hlavní otázky.
