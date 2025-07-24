@@ -2,7 +2,7 @@
 
 select *
 from t_lucie_darmovzalova_project_sql_secondary_final
-where country = 'Czech Republic'; -- kontrola dat
+where country = 'Czech Republic'; -- kontrola dat v tabulce
 
 select *
 from t_lucie_darmovzalova_project_sql_primary_final;
