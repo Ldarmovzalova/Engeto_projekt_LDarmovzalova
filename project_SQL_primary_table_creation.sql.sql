@@ -49,11 +49,3 @@ order by pm.rok, pc.kod;
 
 select *
 from t_lucie_darmovzalova_project_SQL_primary_final; -- kontrola, zda se tabulka vytvořila správně a můžu ji použít dál v projektu
-	
-
-	
-
-
-
-
-
