@@ -2,7 +2,7 @@
 
 select *
 from czechia_price cp 
-limit 10;-- kontrola obsahu tabulky
+limit 10;-- kontrola obsahu tabulky, pro stanovení dalšího postupu
 
 select
     extract(year from date_from) as rok,
@@ -48,7 +48,7 @@ join prumerna_mzda as pm on pc.rok=pm.rok
 order by pm.rok, pc.kod;
 
 select *
-from t_lucie_darmovzalova_project_SQL_primary_final;
+from t_lucie_darmovzalova_project_SQL_primary_final; -- kontrola, zda se tabulka vytvořila správně a můžu ji použít dál v projektu
 	
 
 	
