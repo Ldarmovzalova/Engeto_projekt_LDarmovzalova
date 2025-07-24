@@ -1,13 +1,5 @@
 -- Vytvoření pomocné tabulky secundary pro následnou práci s daty
 
-select *
-from economies
-limit 10; --kontrola obsahu tabulky
-
-select *
-from countries
-limit 10; -- kontrola obsahu tabulky 
-
 select 
 	min (year) as prvni_rok, 
 	max (year) as posledni_rok,
@@ -33,5 +25,5 @@ create table t_lucie_darmovzalova_project_SQL_secondary_final as
 	order by country asc, year asc;
 
 select *
-from t_lucie_darmovzalova_project_SQL_secondary_final;
+from t_lucie_darmovzalova_project_SQL_secondary_final; -- kontrola vytvořené tabulky
 	
