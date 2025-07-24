@@ -1,15 +1,15 @@
 -- Q3: Která kategorie potravin zdražuje nejpomaleji (je u ní nejnižší percentuální meziroční nárůst)?
 
 select *
-from czechia_price; -- kontrola obsahu tabulky
+from czechia_price; -- kontrola obsahu tabulky, abych si připravila, které sloupce budu dál potřebovat
 
 
 select
-  cp.category_code AS kategorie,
+  cp.category_code as kategorie,
   extract (year from cp.date_from) as rok,
   round (avg(cp.value)::numeric,2) as prumerna_cena_potravin
 from  czechia_price as cp
-join czechia_price_category cpc ON cp.category_code = cpc.code
+join czechia_price_category cpc on cp.category_code = cpc.code
 where cp.category_code=118101
 group by cp.category_code, extract (year from cp.date_from)
 order by kategorie, rok; -- výpočet průměrů ceny jednotlivých kategorii potravin v každím roce, kde jsou data
@@ -27,7 +27,7 @@ create table t_lucie_darmovzalova_help_table_prumery_cen as (
 	group by cp.category_code, cpc.name, extract (year from cp.date_from));
 
 select *
-from t_lucie_darmovzalova_help_table_prumery_cen;
+from t_lucie_darmovzalova_help_table_prumery_cen; -- kontrola, zda se vytvořila tabulka správně
 
 
 -- výpočet meziročních změn v cenách během let
@@ -37,10 +37,10 @@ select
     pc1.kod,
     pc1.nazev,
     pc1.prumerna_cena_potraviny,
-    pc2.prumerna_cena_potraviny AS predchozi_prumerna_cena,
+    pc2.prumerna_cena_potraviny as predchozi_prumerna_cena,
     round(100.0 * (pc1.prumerna_cena_potraviny - pc2.prumerna_cena_potraviny) / nullif(pc2.prumerna_cena_potraviny, 0),2) as mezirocni_narust_procent
 from t_lucie_darmovzalova_help_table_prumery_cen as pc1
-join t_lucie_darmovzalova_help_table_prumery_cen as pc2 ON pc1.kod = pc2.kod AND pc1.rok = pc2.rok + 1
+join t_lucie_darmovzalova_help_table_prumery_cen as pc2 on pc1.kod = pc2.kod and pc1.rok = pc2.rok + 1
 order by pc1.kod, pc1.rok;
 
 -- zprůměrování vypočtených procentních pohybů cen
