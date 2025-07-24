@@ -1,9 +1,5 @@
 -- Q1: Rostou v průběhu let mzdy ve všech odvětvích, nebo v některých klesají?
 
-select *
-from czechia_payroll
-limit 10; -- kontrola dat v tabulce
-
 select distinct value_type_code
 from czechia_payroll; -- 5958 prumerna mzda zamestnance
 
@@ -31,7 +27,7 @@ order by cp.industry_branch_code asc,
 	cp.payroll_year asc;
 
 select *
-from t_lucie_darmovzalova_project_SQL_primary_Q1_final; -- tabulka, ze které budu dál srovnávat data, jestli mzdy klesají, nebo stoupají v průběhu let v jednotlivých odvětvích
+from t_lucie_darmovzalova_project_SQL_primary_Q1_final; -- kontrola vytvořené tabulky, ze které budu dál srovnávat data, jestli mzdy klesají, nebo stoupají v průběhu let v jednotlivých odvětvích
 
 create view v_t_lucie_darmovzalova_project_SQL_primary_Q1_final as
 select 	
@@ -53,7 +49,7 @@ left join t_lucie_darmovzalova_project_SQL_primary_Q1_final as b
 order by kod_odvetvi asc, nazev asc, rok asc;
 
 select *
-from v_t_lucie_darmovzalova_project_sql_primary_q1_final ; -- záznamy začínají rokem 2000 a končí rokem 2021, odvětví A-S
+from v_t_lucie_darmovzalova_project_sql_primary_q1_final ; -- kontrola vytvořeného view, zda vše sedí jak potřebuju -> záznamy začínají rokem 2000 a končí rokem 2021, odvětví A-S
 
 select 
 	mezirocni_zmeny,
